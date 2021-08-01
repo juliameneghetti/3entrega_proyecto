@@ -1,0 +1,338 @@
+*{
+    font-family: 'Spartan', sans-serif;
+    color: rgb(226, 115, 160);
+
+
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+}
+
+body{
+    background-color: black;
+}
+
+
+/*HEADER*/
+
+
+    /*LOGO*/
+
+    .header__logo--tamaño{
+        height: 100px;
+        width: auto;
+
+        padding-left: 20px;
+    }
+
+    /* PERSONALIZACIÓN DE BOOTSTRAP */
+
+        /* MENÚ DE NAVEGACIÓN */
+
+        .bg-dark {
+            background-color: transparent!important;
+        }
+
+        .navbar-collapse {
+            justify-content:flex-end;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(114, 110, 110);
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgb(226, 115, 160);
+        }
+
+        .nav-link{
+            margin: 20px;
+        }
+
+        .navbar-collapse img{
+            height: 30px;
+
+            margin: 30px;
+        }
+
+
+/*BODY*/
+
+
+    /* SECCIÓN HOME */
+
+        /*VIDEO HOME*/
+
+        .home--video{
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        /*BOTÓN TIENDA*/
+
+        .home__boton--enlace{
+            display: block;
+
+            background-image: url("../MULTIMEDIA/IMG/HOME/mancha.png");
+
+            height: 200px;
+            width: 450px;
+
+            margin: 100px auto 0 auto;
+        }
+
+        .home__boton--enlace a{
+            text-decoration: none;
+
+            font-size: 20px;
+            color: black;
+        }
+
+        .home__boton--enlace:hover{
+            animation: headShake;
+            animation-duration: 1s;
+        }
+
+
+    /*SECCIÓN SOBRE MI*/
+
+    .flex__sobreMi{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+
+        background-image: url("../MULTIMEDIA/IMG/SOBRE_MI/mancha.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .flex__sobreMi img{
+        width: 600px;
+        height: 900px;
+
+        padding-top: 80px;
+    }
+
+    .flex__sobreMi p{
+        text-align: right;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        line-height: 25px;
+
+        color: white;
+
+        width: 400px;
+        height: 700px;
+
+        padding-top: 250px;
+        padding-right: 70px;
+    }
+
+
+    /*SECCIÓN NEW IN*/
+
+    .carousel__img--tamaño{
+        margin: 50px auto 0 auto;
+    }
+
+
+    /*SECCIÓN TIENDA*/
+
+    .seccion__tienda--background{
+        background-image: url("../MULTIMEDIA/IMG/TIENDA/mancha.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .seccion__tienda--flex{
+        display: flex;
+	    flex-flow: wrap;
+	    justify-content:space-around;
+        text-align: center;
+
+        padding: 50px 0 100px;
+    }
+
+    .seccion__tienda--flex img{
+        width: 350px;
+        height: 450px;
+
+        border: 20px solid rgb(234 155 187 / 40%);
+
+        transition: all 2s;
+    }
+
+    .seccion__tienda--flex img:hover{
+        width: 400px;
+        height: 500px;
+    }
+
+    .seccion__tienda--flex div{
+        margin-top: 5px;
+        background-color: rgb(234 155 187 / 40%);
+    }
+
+    .seccion__tienda--flex p{
+        font-size: 14px;
+        color: white;
+
+        padding-top: 5px;
+    }
+
+    .seccion__tienda--boton:hover{
+        animation: swing;
+        animation-duration: 1s;
+    }
+
+    
+    /*SECCIÓN GALERÍA*/
+
+    h1{
+        font-size: medium;
+
+        color: white;
+
+        padding: 50px 40px;
+    }
+
+    .seccion__galeria--container{
+        display: grid;
+        grid-template-areas:
+        "uno dos tres"
+        "cuatro cuatro cinco"
+        "cuatro cuatro seis";
+
+        margin: 0 40px;
+    }
+
+    .seccion__galeria--container div{
+        display: grid;
+        justify-content: center;
+
+        border: 2px solid rgb(250, 145, 227);
+
+        padding: 10px;
+    }
+
+    .seccion__galeria--container img{
+        border: 10px solid white;
+
+        width: 400px;
+        height: 500px;
+    }
+
+    .seccion__galeria--container video{
+        border: 10px solid white;
+
+        width: auto;
+        height: auto;
+    }
+
+    .valor1{
+        grid-area: uno;
+    }
+
+    .valor2{
+        grid-area: dos;
+    }
+
+    .valor3{
+        grid-area: tres;
+    }
+
+    .valor4{
+        grid-area: cuatro;
+    }
+
+    .valor5{
+        grid-area: cinco;
+    }
+
+    .valor6{
+        grid-area: seis;
+    }
+
+
+    /*SECCIÓN CONTACTO*/
+
+    .formulario__background--estilo{
+        background-image: url("../MULTIMEDIA/IMG/CONTACTO/camcont.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+
+    form fieldset{
+        padding: 40px;
+    }
+
+    form fieldset div{
+         margin: 30px 0;
+    }
+
+    form fieldset div label{
+        width: 200px;
+        height: 30px;
+    }
+
+    form fieldset div input{
+        width: 400px;
+        height: 30px;
+
+        padding-left: 20px;
+    }
+
+    .formulario__estilos--uno{
+        background-color: rgb(234 155 187 / 40%);
+        border: 1px solid white;
+
+        color: white;
+    }
+
+    .formulario__estilos--dos{
+        width: 300px;
+    }
+
+
+/*FOOTER*/
+
+    footer{
+        background-color: rgb(73 72 72 / 17%);
+
+        text-align: center;
+
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    footer img{
+        height: 70px;
+
+        margin: 0 30px;
+    }
+
+    footer a{
+        text-decoration: none;
+
+        color: rgb(226, 115, 160);
+    }
+
+    footer a:hover{
+        color: rgb(226, 115, 160);
+    }
+
+    .footer__boton--redes:hover{
+        animation: swing;
+        animation-duration: 1s;
+    }
+
+    .footer__boton--contacto{
+        font-size: 13px;
+
+        padding-top: 30px;
+    }
+
