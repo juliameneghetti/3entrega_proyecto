@@ -263,17 +263,25 @@ body{
 
     .form-control{
         margin-bottom: 40px;
-       
-        color: white;
 
         background-color: rgb(234 155 187 / 40%);
         border: 1px solid white;
     }
 
+    .form-control:focus {
+        border-color: transparent;
+       
+        box-shadow: none;
+    }
+
+    .form-control::placeholder {
+        color: rgb(234, 155, 187);
+    }
+
     .btn{
         width: 25%;
 
-        color: white;
+        color: rgb(234, 155, 187);
    
         background-color: rgb(234 155 187 / 40%);
         border: 1px solid white;
@@ -281,7 +289,11 @@ body{
 
     .btn:hover{
         background-color: rgb(234 155 187 / 60%);
-        color: #212529;
+        color: white;
+    }
+
+    .btn:focus {
+        box-shadow: none;
     }
 
     .row {
