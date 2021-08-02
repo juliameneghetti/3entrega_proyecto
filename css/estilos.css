@@ -19,7 +19,6 @@ body{
 
 /*HEADER*/
 
-
     /*LOGO*/
 
     .header__logo--tamaño{
@@ -59,9 +58,7 @@ body{
             margin: 30px;
         }
 
-
 /*BODY*/
-
 
     /* SECCIÓN HOME */
 
@@ -97,7 +94,6 @@ body{
             animation-duration: 1s;
         }
 
-
     /*SECCIÓN SOBRE MI*/
 
     .flex__sobreMi{
@@ -132,13 +128,11 @@ body{
         padding-right: 70px;
     }
 
-
     /*SECCIÓN NEW IN*/
 
     .carousel__img--tamaño{
         margin: 50px auto 0 auto;
     }
-
 
     /*SECCIÓN TIENDA*/
 
@@ -183,18 +177,20 @@ body{
         padding-top: 5px;
     }
 
-    .seccion__tienda--boton:hover{
-        animation: swing;
-        animation-duration: 1s;
+    .seccion__tienda--flex button:hover{
+        width: 100%;
+
+        background-color: rgb(234 155 187 / 60%);
     }
 
-    
     /*SECCIÓN GALERÍA*/
 
     h1{
         font-size: medium;
 
         color: white;
+
+        text-align: center;
 
         padding: 50px 40px;
     }
@@ -256,83 +252,77 @@ body{
         grid-area: seis;
     }
 
-
     /*SECCIÓN CONTACTO*/
 
     .formulario__background--estilo{
-        background-image: url("../MULTIMEDIA/IMG/CONTACTO/camcont.png");
+        background-image: url("../MULTIMEDIA/IMG/CONTACTO/manchac.png");
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center;
         background-size: contain;
     }
 
-    form fieldset{
-        padding: 40px;
-    }
+    .form-control{
+        margin-bottom: 40px;
+       
+        color: white;
 
-    form fieldset div{
-         margin: 30px 0;
-    }
-
-    form fieldset div label{
-        width: 200px;
-        height: 30px;
-    }
-
-    form fieldset div input{
-        width: 400px;
-        height: 30px;
-
-        padding-left: 20px;
-    }
-
-    .formulario__estilos--uno{
         background-color: rgb(234 155 187 / 40%);
         border: 1px solid white;
+    }
+
+    .btn{
+        width: 25%;
 
         color: white;
+   
+        background-color: rgb(234 155 187 / 40%);
+        border: 1px solid white;
     }
 
-    .formulario__estilos--dos{
-        width: 300px;
+    .btn:hover{
+        background-color: rgb(234 155 187 / 60%);
+        color: #212529;
     }
 
+    .row {
+        margin: 30px;
+    }
 
 /*FOOTER*/
 
-    footer{
-        background-color: rgb(73 72 72 / 17%);
+footer{
+    background-color: rgb(73 72 72 / 17%);
 
-        text-align: center;
+    text-align: center;
 
-        padding: 20px;
-        margin-top: 100px;
-    }
+    padding: 20px;
+    margin-top: 100px;
+}
 
-    footer img{
-        height: 70px;
+footer img{
+    height: 60px;
 
-        margin: 0 30px;
-    }
+    margin: 0 30px;
+}
 
-    footer a{
-        text-decoration: none;
+footer a{
+    text-decoration: none;
 
-        color: rgb(226, 115, 160);
-    }
+    color: rgb(226, 115, 160);
+}
 
-    footer a:hover{
-        color: rgb(226, 115, 160);
-    }
+footer a:hover{
+    color: rgb(226, 115, 160);
+}
 
-    .footer__boton--redes:hover{
-        animation: swing;
-        animation-duration: 1s;
-    }
+.footer__boton--redes:hover{
+    animation: swing;
+    animation-duration: 1s;
+}
 
-    .footer__boton--contacto{
-        font-size: 13px;
+.footer__boton--contacto{
+    font-size: 13px;
 
-        padding-top: 30px;
-    }
+    padding-top: 30px;
+}
 
